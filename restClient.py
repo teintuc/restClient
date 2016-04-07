@@ -47,7 +47,7 @@ class restClient:
 		return self.getResponse()
 
 	# Make a DELETE request
-	def delete(self, url, headers={}):
-		self.buildRequest(url, "DELETE")
+	def delete(self, url, data={}):
+		self.buildRequest(url, "DELETE", data)
 		return self.getResponse()
 
